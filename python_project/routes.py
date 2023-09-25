@@ -10,9 +10,7 @@ def hello():
 
 @my_app.route("/postman", methods=["POST"])
 def mirror_data():
-    print("here")
     data = request.get_json()
-    print(data)
     return data
 
 
